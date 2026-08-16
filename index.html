@@ -1,25 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Nova - AI Chatbot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova AI</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>🤖 Nova</h1>
-    <p>Your friendly AI companion</p>
+    <div class="app">
 
-    <div id="chat">
-        <p><strong>Nova:</strong> Hello! 👋</p>
+        <header class="header">
+
+            <div class="brand">
+                <div class="logo">✦</div>
+
+                <div>
+                    <h1>Nova</h1>
+                    <p>AI Companion</p>
+                </div>
+            </div>
+
+            <button id="clearButton" class="icon-button">
+                🗑️
+            </button>
+
+        </header>
+
+
+        <main id="chat" class="chat">
+
+            <div class="welcome">
+
+                <div class="nova-avatar">
+                    ✦
+                </div>
+
+                <h2>Hello! I'm Nova 👋</h2>
+
+                <p>
+                    Your friendly AI companion.
+                    Ask me anything!
+                </p>
+
+            </div>
+
+        </main>
+
+
+        <div class="typing" id="typing">
+            Nova is thinking...
+        </div>
+
+
+        <footer class="input-area">
+
+            <input
+                id="messageInput"
+                type="text"
+                placeholder="Message Nova..."
+                autocomplete="off"
+            >
+
+            <button
+                id="sendButton"
+                class="send-button"
+            >
+                ➤
+            </button>
+
+        </footer>
+
     </div>
 
-    <input
-        type="text"
-        id="message"
-        placeholder="Type your message..."
-    >
 
-    <button>Send</button>
+    <script src="script.js"></script>
 
 </body>
 </html>
